@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации</title>
+</head>
+<body>
+    <div class="form-wrap">
+        <div class="profile"><img src="форма регистрации.webp"alt="My Logo" width="200" height="200" title="лого">
+          <h1>Форма регистрации</h1>
+        </div>
+       <p> <form method="post" action="form.php"></p>
+          <div>
+            <label for="name">Имя</label>
+            <input type="text" name="name" required>
+          </div>
+          <div class="radio">
+            <p><span>Пол</span></p>
+            <label>
+              <input type="radio" name="sex" value="мужской">мужской
+              <div class="radio-control male"></div>
+            </label>
+            <label>
+              <input type="radio" name="sex" value="женский">женский
+              <div class="radio-control female"></div>
+            </label>
+          </div>
+          <div>
+            <p><label for="email">E-mail</label></p>
+            <input type="email" name="email" required>
+          </div>
+          <div>
+            <p><label for="country">Страна</label></p>
+            <select name="country">
+              <option>Выберите страну проживания</option>
+              <option value="Россия">Россия</option> 
+              <option value="Украина">Украина</option> 
+              <option value="Беларусь">Беларусь</option> 
+            </select> 
+            <div class="select-arrow"></div> 
+          </div> 
+          <p><button type="submit">Отправить</button> </p>
+        </form> 
+      </div>
+</body>
+</html>
